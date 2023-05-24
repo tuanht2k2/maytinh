@@ -1,0 +1,83 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgb(236, 222, 235), rgb(172, 201, 220));
+}
+
+.stopwatch-container {
+  background-color: rgb(57, 56, 56);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stopwatch-container-display-time-line {
+  margin: 50px;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px double rgb(209, 134, 14);
+  border-radius: 50%;
+}
+
+.stopwatch-container-display-time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+}
+
+.stopwatch-container-control {
+  padding: 20px 40px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stopwatch-container-control-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.stopwatch-container-control-btn.play {
+  background-color: #e63e21;
+}
+
+.stopwatch-container-control-btn.play:hover {
+  background-color: #d6371b;
+}
+
+.stopwatch-container-control-btn.delete,
+.stopwatch-container-control-btn.record {
+  background-image: linear-gradient(140deg, #7cff9f, #43b2d7);
+  transition: 0.3s;
+}
+
+.stopwatch-container-control-btn.delete:hover,
+.stopwatch-container-control-btn.record:hover {
+  background-image: linear-gradient(140deg, #43b2d7, #7cff9f);
+}
+
+.stopwatch-container-control-btn.delete *,
+.stopwatch-container-control-btn.record *,
+.stopwatch-container-control-btn.play {
+  color: rgb(236, 217, 217);
+}
+/* 
+.stopwatch-container-control-btn.play * {
+  color: white;
+} */
